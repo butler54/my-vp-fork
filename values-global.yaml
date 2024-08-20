@@ -1,10 +1,11 @@
----
 global:
-  pattern: multicloud-gitops
+  pattern: my-vp-fork
   options:
     useCSV: false
     syncPolicy: Automatic
     installPlanApproval: Automatic
+  configdemosecret:
+    key: secret/data/global/config-demo-deloitte
 main:
   clusterGroupName: hub
   multiSourceConfig:
